@@ -14,6 +14,7 @@
 #import "RSBodyHandler.h"
 #import "RSResultHandler.h"
 #import "RSErrors.h"
+#import "AFNetworking.h"
 
 @interface RSAFNetworkingCall ()
 

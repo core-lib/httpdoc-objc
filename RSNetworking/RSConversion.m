@@ -172,7 +172,7 @@
         NSMutableDictionary<NSString *, NSArray<NSString *> *> *dictionary = [NSMutableDictionary dictionary];
         for (NSUInteger i = 0; i < array.count; i ++) {
             NSObject *val = [array objectAtIndex:i];
-            NSString *key = [NSString stringWithFormat:@"%@[%lu]", name, i];
+            NSString *key = [NSString stringWithFormat:@"%@[%lu]", name, (unsigned long)i];
             NSDictionary<NSString *, NSArray<NSString *> *> *dic = [converter convertValue:val forName:key];
             [dictionary addEntriesFromDictionary:dic];
         }
@@ -217,7 +217,7 @@
         NSMutableDictionary<NSString *, NSArray<NSString *> *> *dictionary = [NSMutableDictionary dictionary];
         NSUInteger i = 0;
         for (NSObject *val in set) {
-            NSString *key = [NSString stringWithFormat:@"%@[%lu]", name, i++];
+            NSString *key = [NSString stringWithFormat:@"%@[%lu]", name, (unsigned long)i++];
             NSDictionary<NSString *, NSArray<NSString *> *> *dic = [converter convertValue:val forName:key];
             [dictionary addEntriesFromDictionary:dic];
         }

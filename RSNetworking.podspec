@@ -18,8 +18,8 @@ Pod::Spec.new do |s|
   s.source_files  = "RSNetworking/*.{h,m}" #你代码的位置， RSNetworking/ *.{h,m} 表示 RSNetworking 文件夹下所有的.h和.m文件
   s.frameworks = "UIKit", "Foundation" #支持的框架
   s.requires_arc = true #是否使用arc
-  s.dependency = "AFNetworking" # 依赖库
-  s.dependency = "MJExtension" # 依赖库
+  s.dependency "AFNetworking" # 依赖库
+  s.dependency "MJExtension" # 依赖库
  
   s.author             = { "杨昌沛" => "646742615@qq.com" }
   s.social_media_url   = "https://github.com/core-lib"

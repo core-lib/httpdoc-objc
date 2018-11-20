@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "RSInvocation.h"
-#import "AFNetworking.h"
+@class AFNetworking;
+@class AFHTTPSessionManager;
 
 @protocol RSCall
 
